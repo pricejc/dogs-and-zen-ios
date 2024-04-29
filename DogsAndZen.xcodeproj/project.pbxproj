@@ -1,0 +1,814 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE0505AB2BD2C81B00379070 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0505AA2BD2C81B00379070 /* Utilities.swift */; };
+		DE13E3782BD7FC9300D67380 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE13E3772BD7FC9300D67380 /* Extensions.swift */; };
+		DE29287F2BC7183100FF8848 /* MeditationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE29287E2BC7183100FF8848 /* MeditationSession.swift */; };
+		DE2928812BC7185A00FF8848 /* DogImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2928802BC7185A00FF8848 /* DogImage.swift */; };
+		DE2928872BC719FA00FF8848 /* DogImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2928862BC719FA00FF8848 /* DogImageFetcher.swift */; };
+		DE29288C2BC71C6200FF8848 /* DogQuoteCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE29288B2BC71C6100FF8848 /* DogQuoteCard.swift */; };
+		DE4435DA2BD80F8500C81341 /* ZenQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4435D92BD80F8500C81341 /* ZenQuote.swift */; };
+		DE4435DE2BD815D800C81341 /* ZenQuoteFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4435DD2BD815D800C81341 /* ZenQuoteFetcher.swift */; };
+		DE4435E12BD81FBE00C81341 /* MeditationPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4435E02BD81FBE00C81341 /* MeditationPlayer.swift */; };
+		DE4435E32BD85F3F00C81341 /* MeditationSetupScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4435E22BD85F3F00C81341 /* MeditationSetupScreen.swift */; };
+		DE4435E92BD987AA00C81341 /* DZButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4435E82BD987AA00C81341 /* DZButton.swift */; };
+		DE4435EB2BDFDE1400C81341 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE4435EA2BDFDE1400C81341 /* LaunchScreen.storyboard */; };
+		DE6635E32BC0273200FCFE28 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6635E22BC0273200FCFE28 /* HomeScreen.swift */; };
+		DE6635E62BC027D800FCFE28 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6635E52BC027D800FCFE28 /* Card.swift */; };
+		DE6635E92BC02E5A00FCFE28 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = DE6635E82BC02E5A00FCFE28 /* FSCalendar */; };
+		DE6635EB2BC02E8900FCFE28 /* MeditationCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6635EA2BC02E8900FCFE28 /* MeditationCalendar.swift */; };
+		DE6635ED2BC03E4E00FCFE28 /* MeditationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6635EC2BC03E4E00FCFE28 /* MeditationScreen.swift */; };
+		DEC6FC422BBF25BB000A98F4 /* DogsAndZenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC6FC412BBF25BB000A98F4 /* DogsAndZenApp.swift */; };
+		DEC6FC442BBF25BB000A98F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC6FC432BBF25BB000A98F4 /* ContentView.swift */; };
+		DEC6FC462BBF25BC000A98F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEC6FC452BBF25BC000A98F4 /* Assets.xcassets */; };
+		DEC6FC492BBF25BC000A98F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEC6FC482BBF25BC000A98F4 /* Preview Assets.xcassets */; };
+		DEC6FC532BBF25BC000A98F4 /* DogsAndZenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC6FC522BBF25BC000A98F4 /* DogsAndZenTests.swift */; };
+		DEC6FC5D2BBF25BC000A98F4 /* DogsAndZenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC6FC5C2BBF25BC000A98F4 /* DogsAndZenUITests.swift */; };
+		DEC6FC5F2BBF25BC000A98F4 /* DogsAndZenUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC6FC5E2BBF25BC000A98F4 /* DogsAndZenUITestsLaunchTests.swift */; };
+		DEC882632BC9CEFA00FC7E7C /* MeditationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC882622BC9CEFA00FC7E7C /* MeditationCard.swift */; };
+		DEC882662BC9D24600FC7E7C /* Meditation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC882652BC9D24600FC7E7C /* Meditation.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DEC6FC4F2BBF25BC000A98F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEC6FC362BBF25BB000A98F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEC6FC3D2BBF25BB000A98F4;
+			remoteInfo = DogsAndZen;
+		};
+		DEC6FC592BBF25BC000A98F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEC6FC362BBF25BB000A98F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEC6FC3D2BBF25BB000A98F4;
+			remoteInfo = DogsAndZen;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DE0505AA2BD2C81B00379070 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		DE13E3772BD7FC9300D67380 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		DE29287E2BC7183100FF8848 /* MeditationSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationSession.swift; sourceTree = "<group>"; };
+		DE2928802BC7185A00FF8848 /* DogImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImage.swift; sourceTree = "<group>"; };
+		DE2928862BC719FA00FF8848 /* DogImageFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImageFetcher.swift; sourceTree = "<group>"; };
+		DE29288B2BC71C6100FF8848 /* DogQuoteCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogQuoteCard.swift; sourceTree = "<group>"; };
+		DE4435D92BD80F8500C81341 /* ZenQuote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZenQuote.swift; sourceTree = "<group>"; };
+		DE4435DD2BD815D800C81341 /* ZenQuoteFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZenQuoteFetcher.swift; sourceTree = "<group>"; };
+		DE4435E02BD81FBE00C81341 /* MeditationPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationPlayer.swift; sourceTree = "<group>"; };
+		DE4435E22BD85F3F00C81341 /* MeditationSetupScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationSetupScreen.swift; sourceTree = "<group>"; };
+		DE4435E82BD987AA00C81341 /* DZButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DZButton.swift; sourceTree = "<group>"; };
+		DE4435EA2BDFDE1400C81341 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE59DFBF2BBF3F4200126F23 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DE6635E22BC0273200FCFE28 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		DE6635E52BC027D800FCFE28 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		DE6635EA2BC02E8900FCFE28 /* MeditationCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationCalendar.swift; sourceTree = "<group>"; };
+		DE6635EC2BC03E4E00FCFE28 /* MeditationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationScreen.swift; sourceTree = "<group>"; };
+		DEC6FC3E2BBF25BB000A98F4 /* DogsAndZen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogsAndZen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEC6FC412BBF25BB000A98F4 /* DogsAndZenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsAndZenApp.swift; sourceTree = "<group>"; };
+		DEC6FC432BBF25BB000A98F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DEC6FC452BBF25BC000A98F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DEC6FC482BBF25BC000A98F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DEC6FC4E2BBF25BC000A98F4 /* DogsAndZenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogsAndZenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEC6FC522BBF25BC000A98F4 /* DogsAndZenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsAndZenTests.swift; sourceTree = "<group>"; };
+		DEC6FC582BBF25BC000A98F4 /* DogsAndZenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogsAndZenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEC6FC5C2BBF25BC000A98F4 /* DogsAndZenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsAndZenUITests.swift; sourceTree = "<group>"; };
+		DEC6FC5E2BBF25BC000A98F4 /* DogsAndZenUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsAndZenUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DEC882622BC9CEFA00FC7E7C /* MeditationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationCard.swift; sourceTree = "<group>"; };
+		DEC882652BC9D24600FC7E7C /* Meditation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meditation.swift; sourceTree = "<group>"; };
+		DEC882672BD078E200FC7E7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DEC6FC3B2BBF25BB000A98F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE6635E92BC02E5A00FCFE28 /* FSCalendar in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEC6FC4B2BBF25BC000A98F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEC6FC552BBF25BC000A98F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE0505A32BD2C6B700379070 /* Zen */ = {
+			isa = PBXGroup;
+			children = (
+				DE4435D82BD80F7900C81341 /* Models */,
+				DE0505A42BD2C6DA00379070 /* Screens */,
+			);
+			path = Zen;
+			sourceTree = "<group>";
+		};
+		DE0505A42BD2C6DA00379070 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				DE6635E22BC0273200FCFE28 /* HomeScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		DE0505A52BD2C6EA00379070 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				DE6635EC2BC03E4E00FCFE28 /* MeditationScreen.swift */,
+				DE4435E22BD85F3F00C81341 /* MeditationSetupScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		DE4435D82BD80F7900C81341 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DE4435D92BD80F8500C81341 /* ZenQuote.swift */,
+				DE4435DD2BD815D800C81341 /* ZenQuoteFetcher.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DE4435DF2BD81FB000C81341 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				DE4435E02BD81FBE00C81341 /* MeditationPlayer.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		DEC6FC352BBF25BB000A98F4 = {
+			isa = PBXGroup;
+			children = (
+				DE59DFBF2BBF3F4200126F23 /* README.md */,
+				DEC6FC402BBF25BB000A98F4 /* DogsAndZen */,
+				DEC6FC512BBF25BC000A98F4 /* DogsAndZenTests */,
+				DEC6FC5B2BBF25BC000A98F4 /* DogsAndZenUITests */,
+				DEC6FC3F2BBF25BB000A98F4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DEC6FC3F2BBF25BB000A98F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEC6FC3E2BBF25BB000A98F4 /* DogsAndZen.app */,
+				DEC6FC4E2BBF25BC000A98F4 /* DogsAndZenTests.xctest */,
+				DEC6FC582BBF25BC000A98F4 /* DogsAndZenUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEC6FC402BBF25BB000A98F4 /* DogsAndZen */ = {
+			isa = PBXGroup;
+			children = (
+				DEC8826A2BD2BA9100FC7E7C /* Code */,
+				DEC882672BD078E200FC7E7C /* Info.plist */,
+				DEC6FC452BBF25BC000A98F4 /* Assets.xcassets */,
+				DEC6FC472BBF25BC000A98F4 /* Preview Content */,
+				DE4435EA2BDFDE1400C81341 /* LaunchScreen.storyboard */,
+			);
+			path = DogsAndZen;
+			sourceTree = "<group>";
+		};
+		DEC6FC472BBF25BC000A98F4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DEC6FC482BBF25BC000A98F4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DEC6FC512BBF25BC000A98F4 /* DogsAndZenTests */ = {
+			isa = PBXGroup;
+			children = (
+				DEC6FC522BBF25BC000A98F4 /* DogsAndZenTests.swift */,
+			);
+			path = DogsAndZenTests;
+			sourceTree = "<group>";
+		};
+		DEC6FC5B2BBF25BC000A98F4 /* DogsAndZenUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DEC6FC5C2BBF25BC000A98F4 /* DogsAndZenUITests.swift */,
+				DEC6FC5E2BBF25BC000A98F4 /* DogsAndZenUITestsLaunchTests.swift */,
+			);
+			path = DogsAndZenUITests;
+			sourceTree = "<group>";
+		};
+		DEC8826A2BD2BA9100FC7E7C /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				DEC882702BD2BB8F00FC7E7C /* Common */,
+				DE0505A32BD2C6B700379070 /* Zen */,
+				DEC882742BD2BC0600FC7E7C /* Dogs */,
+				DEC8826F2BD2BB8300FC7E7C /* Meditation */,
+				DEC6FC432BBF25BB000A98F4 /* ContentView.swift */,
+				DEC6FC412BBF25BB000A98F4 /* DogsAndZenApp.swift */,
+				DE0505AA2BD2C81B00379070 /* Utilities.swift */,
+				DE13E3772BD7FC9300D67380 /* Extensions.swift */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		DEC8826F2BD2BB8300FC7E7C /* Meditation */ = {
+			isa = PBXGroup;
+			children = (
+				DEC882732BD2BBE100FC7E7C /* Models */,
+				DE4435DF2BD81FB000C81341 /* Player */,
+				DE0505A52BD2C6EA00379070 /* Screens */,
+				DEC882722BD2BBD000FC7E7C /* Views */,
+			);
+			path = Meditation;
+			sourceTree = "<group>";
+		};
+		DEC882702BD2BB8F00FC7E7C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DEC882712BD2BB9400FC7E7C /* Views */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DEC882712BD2BB9400FC7E7C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE6635EA2BC02E8900FCFE28 /* MeditationCalendar.swift */,
+				DE6635E52BC027D800FCFE28 /* Card.swift */,
+				DE4435E82BD987AA00C81341 /* DZButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DEC882722BD2BBD000FC7E7C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DEC882622BC9CEFA00FC7E7C /* MeditationCard.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DEC882732BD2BBE100FC7E7C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DE29287E2BC7183100FF8848 /* MeditationSession.swift */,
+				DEC882652BC9D24600FC7E7C /* Meditation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DEC882742BD2BC0600FC7E7C /* Dogs */ = {
+			isa = PBXGroup;
+			children = (
+				DEC882762BD2BC1300FC7E7C /* Models */,
+				DEC882752BD2BC0C00FC7E7C /* Views */,
+			);
+			path = Dogs;
+			sourceTree = "<group>";
+		};
+		DEC882752BD2BC0C00FC7E7C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE29288B2BC71C6100FF8848 /* DogQuoteCard.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DEC882762BD2BC1300FC7E7C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DE2928802BC7185A00FF8848 /* DogImage.swift */,
+				DE2928862BC719FA00FF8848 /* DogImageFetcher.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DEC6FC3D2BBF25BB000A98F4 /* DogsAndZen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEC6FC622BBF25BC000A98F4 /* Build configuration list for PBXNativeTarget "DogsAndZen" */;
+			buildPhases = (
+				DEC6FC3A2BBF25BB000A98F4 /* Sources */,
+				DEC6FC3B2BBF25BB000A98F4 /* Frameworks */,
+				DEC6FC3C2BBF25BB000A98F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DogsAndZen;
+			packageProductDependencies = (
+				DE6635E82BC02E5A00FCFE28 /* FSCalendar */,
+			);
+			productName = DogsAndZen;
+			productReference = DEC6FC3E2BBF25BB000A98F4 /* DogsAndZen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DEC6FC4D2BBF25BC000A98F4 /* DogsAndZenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEC6FC652BBF25BC000A98F4 /* Build configuration list for PBXNativeTarget "DogsAndZenTests" */;
+			buildPhases = (
+				DEC6FC4A2BBF25BC000A98F4 /* Sources */,
+				DEC6FC4B2BBF25BC000A98F4 /* Frameworks */,
+				DEC6FC4C2BBF25BC000A98F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEC6FC502BBF25BC000A98F4 /* PBXTargetDependency */,
+			);
+			name = DogsAndZenTests;
+			productName = DogsAndZenTests;
+			productReference = DEC6FC4E2BBF25BC000A98F4 /* DogsAndZenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DEC6FC572BBF25BC000A98F4 /* DogsAndZenUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEC6FC682BBF25BC000A98F4 /* Build configuration list for PBXNativeTarget "DogsAndZenUITests" */;
+			buildPhases = (
+				DEC6FC542BBF25BC000A98F4 /* Sources */,
+				DEC6FC552BBF25BC000A98F4 /* Frameworks */,
+				DEC6FC562BBF25BC000A98F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEC6FC5A2BBF25BC000A98F4 /* PBXTargetDependency */,
+			);
+			name = DogsAndZenUITests;
+			productName = DogsAndZenUITests;
+			productReference = DEC6FC582BBF25BC000A98F4 /* DogsAndZenUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DEC6FC362BBF25BB000A98F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					DEC6FC3D2BBF25BB000A98F4 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					DEC6FC4D2BBF25BC000A98F4 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = DEC6FC3D2BBF25BB000A98F4;
+					};
+					DEC6FC572BBF25BC000A98F4 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = DEC6FC3D2BBF25BB000A98F4;
+					};
+				};
+			};
+			buildConfigurationList = DEC6FC392BBF25BB000A98F4 /* Build configuration list for PBXProject "DogsAndZen" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DEC6FC352BBF25BB000A98F4;
+			packageReferences = (
+				DE6635E72BC02E5A00FCFE28 /* XCRemoteSwiftPackageReference "FSCalendar" */,
+			);
+			productRefGroup = DEC6FC3F2BBF25BB000A98F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEC6FC3D2BBF25BB000A98F4 /* DogsAndZen */,
+				DEC6FC4D2BBF25BC000A98F4 /* DogsAndZenTests */,
+				DEC6FC572BBF25BC000A98F4 /* DogsAndZenUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEC6FC3C2BBF25BB000A98F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE4435EB2BDFDE1400C81341 /* LaunchScreen.storyboard in Resources */,
+				DEC6FC492BBF25BC000A98F4 /* Preview Assets.xcassets in Resources */,
+				DEC6FC462BBF25BC000A98F4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEC6FC4C2BBF25BC000A98F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEC6FC562BBF25BC000A98F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DEC6FC3A2BBF25BB000A98F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEC882662BC9D24600FC7E7C /* Meditation.swift in Sources */,
+				DE6635ED2BC03E4E00FCFE28 /* MeditationScreen.swift in Sources */,
+				DE4435E12BD81FBE00C81341 /* MeditationPlayer.swift in Sources */,
+				DE4435E32BD85F3F00C81341 /* MeditationSetupScreen.swift in Sources */,
+				DE2928872BC719FA00FF8848 /* DogImageFetcher.swift in Sources */,
+				DE6635EB2BC02E8900FCFE28 /* MeditationCalendar.swift in Sources */,
+				DE0505AB2BD2C81B00379070 /* Utilities.swift in Sources */,
+				DE13E3782BD7FC9300D67380 /* Extensions.swift in Sources */,
+				DE4435E92BD987AA00C81341 /* DZButton.swift in Sources */,
+				DE4435DA2BD80F8500C81341 /* ZenQuote.swift in Sources */,
+				DE4435DE2BD815D800C81341 /* ZenQuoteFetcher.swift in Sources */,
+				DE29287F2BC7183100FF8848 /* MeditationSession.swift in Sources */,
+				DE2928812BC7185A00FF8848 /* DogImage.swift in Sources */,
+				DE6635E62BC027D800FCFE28 /* Card.swift in Sources */,
+				DE29288C2BC71C6200FF8848 /* DogQuoteCard.swift in Sources */,
+				DEC882632BC9CEFA00FC7E7C /* MeditationCard.swift in Sources */,
+				DEC6FC442BBF25BB000A98F4 /* ContentView.swift in Sources */,
+				DE6635E32BC0273200FCFE28 /* HomeScreen.swift in Sources */,
+				DEC6FC422BBF25BB000A98F4 /* DogsAndZenApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEC6FC4A2BBF25BC000A98F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEC6FC532BBF25BC000A98F4 /* DogsAndZenTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEC6FC542BBF25BC000A98F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEC6FC5D2BBF25BC000A98F4 /* DogsAndZenUITests.swift in Sources */,
+				DEC6FC5F2BBF25BC000A98F4 /* DogsAndZenUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DEC6FC502BBF25BC000A98F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEC6FC3D2BBF25BB000A98F4 /* DogsAndZen */;
+			targetProxy = DEC6FC4F2BBF25BC000A98F4 /* PBXContainerItemProxy */;
+		};
+		DEC6FC5A2BBF25BC000A98F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEC6FC3D2BBF25BB000A98F4 /* DogsAndZen */;
+			targetProxy = DEC6FC592BBF25BC000A98F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DEC6FC602BBF25BC000A98F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DEC6FC612BBF25BC000A98F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DEC6FC632BBF25BC000A98F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DogsAndZen/Preview Content\"";
+				DEVELOPMENT_TEAM = P75B6Z8WAH;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DogsAndZen/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Dogs & Zen";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.pricejc.dogsandzen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DEC6FC642BBF25BC000A98F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DogsAndZen/Preview Content\"";
+				DEVELOPMENT_TEAM = P75B6Z8WAH;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DogsAndZen/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Dogs & Zen";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.pricejc.dogsandzen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DEC6FC662BBF25BC000A98F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P75B6Z8WAH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.pricejc.DogsAndZenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DogsAndZen.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DogsAndZen";
+			};
+			name = Debug;
+		};
+		DEC6FC672BBF25BC000A98F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P75B6Z8WAH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.pricejc.DogsAndZenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DogsAndZen.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DogsAndZen";
+			};
+			name = Release;
+		};
+		DEC6FC692BBF25BC000A98F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P75B6Z8WAH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.pricejc.DogsAndZenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DogsAndZen;
+			};
+			name = Debug;
+		};
+		DEC6FC6A2BBF25BC000A98F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P75B6Z8WAH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.pricejc.DogsAndZenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DogsAndZen;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DEC6FC392BBF25BB000A98F4 /* Build configuration list for PBXProject "DogsAndZen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEC6FC602BBF25BC000A98F4 /* Debug */,
+				DEC6FC612BBF25BC000A98F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEC6FC622BBF25BC000A98F4 /* Build configuration list for PBXNativeTarget "DogsAndZen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEC6FC632BBF25BC000A98F4 /* Debug */,
+				DEC6FC642BBF25BC000A98F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEC6FC652BBF25BC000A98F4 /* Build configuration list for PBXNativeTarget "DogsAndZenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEC6FC662BBF25BC000A98F4 /* Debug */,
+				DEC6FC672BBF25BC000A98F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEC6FC682BBF25BC000A98F4 /* Build configuration list for PBXNativeTarget "DogsAndZenUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEC6FC692BBF25BC000A98F4 /* Debug */,
+				DEC6FC6A2BBF25BC000A98F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DE6635E72BC02E5A00FCFE28 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DE6635E82BC02E5A00FCFE28 /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE6635E72BC02E5A00FCFE28 /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = DEC6FC362BBF25BB000A98F4 /* Project object */;
+}
