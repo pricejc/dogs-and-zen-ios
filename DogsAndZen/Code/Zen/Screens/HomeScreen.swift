@@ -11,17 +11,16 @@ import SwiftUI
 /// The Home screen.
 struct HomeScreen: View {
   @Environment(\.modelContext) private var context
+  @Environment(\.scenePhase) private var scenePhase
 
   @Query(
     filter: MeditationSession.inRange(
       startDate: Date().startOfMonth(), endDate: Date().endOfMonth()))
   private var sessions: [MeditationSession]
-  private var dogQuote = getRandomDogQuote()
-  private var dogQuotes = getDogQuotes()
-  private var dailyProgress: Double = 0.0
-
+  @State private var dogQuote = getRandomDogQuote()
   @State private var path = NavigationPath()
   @State private var meditationSettings = MeditationSettings()
+  @State private var dailyProgress = 0.0
 
   var body: some View {
     NavigationStack(path: $path) {
@@ -41,6 +40,12 @@ struct HomeScreen: View {
               .foregroundStyle(.white)
               .fontWeight(.light)
             Spacer()
+            NavigationLink(destination: ProfileScreen.init) {
+              Image(systemName: "person.circle.fill")
+                .foregroundStyle(.white)
+                .padding()
+                .font(.title2)
+            }
           }
           ScrollView {
             VStack {
@@ -48,7 +53,10 @@ struct HomeScreen: View {
                 .leading, .trailing, .bottom,
               ])
               NavigationLink(value: "MeditationSetup") {
-                MeditationCard(progress: getDailyProgress()).padding([.leading, .trailing, .bottom])
+                MeditationCard(progress: dailyProgress).padding([.leading, .trailing, .bottom])
+              }
+              .onAppear {
+                dailyProgress = getDailyProgress()
               }
               .buttonStyle(PlainButtonStyle())
               .navigationDestination(for: String.self) { x in
@@ -70,10 +78,15 @@ struct HomeScreen: View {
       .background(.themeBackground)
       .navigationBarBackButtonHidden()
     }
+    .onChange(of: scenePhase) { oldPhase, newPhase in
+      if newPhase == .active {
+        dogQuote = getRandomDogQuote()
+      }
+    }
   }
 
   func getDailyProgress() -> Double {
-    let targetDuration = 300.0
+    let targetDuration = Double(ProfileManager().DailyMeditationGoal)
     var duration = 0.0
     for session in sessions {
       if Calendar.current.isDateInToday(session.date) {

@@ -36,7 +36,7 @@ struct FSCalendarViewRepresentable: UIViewRepresentable {
     calendar.appearance.headerMinimumDissolvedAlpha = 0
     calendar.appearance.headerTitleColor = UIColor.gray
     calendar.appearance.weekdayTextColor = UIColor.gray
-    calendar.appearance.todayColor = UIColor(.themeCalendarToday)
+    calendar.appearance.todayColor = nil
     calendar.appearance.headerDateFormat = "MMMM"
     return calendar
   }
@@ -64,6 +64,11 @@ struct FSCalendarViewRepresentable: UIViewRepresentable {
       if isComplete(date: date) {
         return UIColor(Color("theme_primary"))
       }
+
+      if Calendar.current.isDateInToday(date) {
+        return UIColor(.themeCalendarToday)
+      }
+
       return nil
     }
 
@@ -87,7 +92,7 @@ struct FSCalendarViewRepresentable: UIViewRepresentable {
     func isComplete(date: Date) -> Bool {
       let sessions = parent.sessions.filter { Calendar.current.isDate($0.date, inSameDayAs: date) }
       let duration = sessions.lazy.compactMap({ $0.duration }).reduce(0, +)
-      return duration >= 300
+      return duration >= ProfileManager().DailyMeditationGoal
     }
   }
 }

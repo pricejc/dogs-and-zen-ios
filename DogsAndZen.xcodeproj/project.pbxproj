@@ -24,6 +24,8 @@
 		DE6635E92BC02E5A00FCFE28 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = DE6635E82BC02E5A00FCFE28 /* FSCalendar */; };
 		DE6635EB2BC02E8900FCFE28 /* MeditationCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6635EA2BC02E8900FCFE28 /* MeditationCalendar.swift */; };
 		DE6635ED2BC03E4E00FCFE28 /* MeditationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6635EC2BC03E4E00FCFE28 /* MeditationScreen.swift */; };
+		DE8D91BA2BFAADEF0080AE7B /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8D91B92BFAADEF0080AE7B /* ProfileScreen.swift */; };
+		DE8D91BD2BFAB40B0080AE7B /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8D91BC2BFAB40B0080AE7B /* ProfileManager.swift */; };
 		DEC6FC422BBF25BB000A98F4 /* DogsAndZenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC6FC412BBF25BB000A98F4 /* DogsAndZenApp.swift */; };
 		DEC6FC442BBF25BB000A98F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC6FC432BBF25BB000A98F4 /* ContentView.swift */; };
 		DEC6FC462BBF25BC000A98F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEC6FC452BBF25BC000A98F4 /* Assets.xcassets */; };
@@ -70,6 +72,8 @@
 		DE6635E52BC027D800FCFE28 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		DE6635EA2BC02E8900FCFE28 /* MeditationCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationCalendar.swift; sourceTree = "<group>"; };
 		DE6635EC2BC03E4E00FCFE28 /* MeditationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationScreen.swift; sourceTree = "<group>"; };
+		DE8D91B92BFAADEF0080AE7B /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
+		DE8D91BC2BFAB40B0080AE7B /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
 		DEC6FC3E2BBF25BB000A98F4 /* DogsAndZen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogsAndZen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEC6FC412BBF25BB000A98F4 /* DogsAndZenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsAndZenApp.swift; sourceTree = "<group>"; };
 		DEC6FC432BBF25BB000A98F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -154,6 +158,23 @@
 			path = Player;
 			sourceTree = "<group>";
 		};
+		DE8D91B72BFAADD40080AE7B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				DE8D91B82BFAADE30080AE7B /* Screens */,
+				DE8D91BC2BFAB40B0080AE7B /* ProfileManager.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		DE8D91B82BFAADE30080AE7B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				DE8D91B92BFAADEF0080AE7B /* ProfileScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		DEC6FC352BBF25BB000A98F4 = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +240,7 @@
 				DE0505A32BD2C6B700379070 /* Zen */,
 				DEC882742BD2BC0600FC7E7C /* Dogs */,
 				DEC8826F2BD2BB8300FC7E7C /* Meditation */,
+				DE8D91B72BFAADD40080AE7B /* Profile */,
 				DEC6FC432BBF25BB000A98F4 /* ContentView.swift */,
 				DEC6FC412BBF25BB000A98F4 /* DogsAndZenApp.swift */,
 				DE0505AA2BD2C81B00379070 /* Utilities.swift */,
@@ -446,6 +468,7 @@
 				DE13E3782BD7FC9300D67380 /* Extensions.swift in Sources */,
 				DE4435E92BD987AA00C81341 /* DZButton.swift in Sources */,
 				DE4435DA2BD80F8500C81341 /* ZenQuote.swift in Sources */,
+				DE8D91BD2BFAB40B0080AE7B /* ProfileManager.swift in Sources */,
 				DE4435DE2BD815D800C81341 /* ZenQuoteFetcher.swift in Sources */,
 				DE29287F2BC7183100FF8848 /* MeditationSession.swift in Sources */,
 				DE2928812BC7185A00FF8848 /* DogImage.swift in Sources */,
@@ -455,6 +478,7 @@
 				DEC6FC442BBF25BB000A98F4 /* ContentView.swift in Sources */,
 				DE6635E32BC0273200FCFE28 /* HomeScreen.swift in Sources */,
 				DEC6FC422BBF25BB000A98F4 /* DogsAndZenApp.swift in Sources */,
+				DE8D91BA2BFAADEF0080AE7B /* ProfileScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

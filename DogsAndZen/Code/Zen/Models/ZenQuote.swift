@@ -30,10 +30,11 @@ class ZenQuote: Identifiable, Codable {
       quote: "If you realize you have enough, you are truly rich.",
       author: "Lao Tzu"),
     ZenQuote(
-      quote: "If you miss the present moment, you miss your appointment with life. That is very serious!",
+      quote:
+        "If you miss the present moment, you miss your appointment with life. That is very serious!",
       author: "Thich Nhat Hanh"),
     ZenQuote(
       quote: "Let go, or be dragged.",
-      author: "Zen Proverb")
+      author: "Zen Proverb"),
   ]
 }
